@@ -50,6 +50,27 @@ Backend (API): runs on http://localhost:3000
 
 ---
 
+
+## 🐳 PostgreSQL with Docker
+
+Start the database with Docker:
+
+```bash
+docker-compose up -d
+cd library-service
+npx prisma migrate dev --name init
+npx prisma generate
+```
+
+## 🔑 Necessary environment variables:
+
+```bash
+cd library-service
+echo. > .env
+DATABASE_URL="postgresql://postgres:postgres@localhost:5432/library_db"
+PORT=3000
+```
+
 ## 📁 Project Structure
 
 ```bash
@@ -59,7 +80,7 @@ library-system/
 ├── package.json   # Root scripts (dev, install:all, etc.)
 └── README.md
 ```
----
+
 ## 🧰 Built With
 ```bash
 React + Vite
