@@ -32,26 +32,35 @@ npm install
 2. Install frontend and backend dependencies:
 
 npm run install:all
+```
 
-▶️ Run the Project (Development Mode)
+---
+## ▶️ Run the Project (Development Mode)
 
-Start both the frontend and backend with a single command:
+### Start both the frontend and backend with a single command:
 
+```bash
 npm run dev
 
 Frontend: runs on http://localhost:5173
 
 Backend (API): runs on http://localhost:3000
+```
 
-📁 Project Structure
+---
 
+## 📁 Project Structure
+
+```bash
 library-system/
 ├── library-service/     # React frontend (UI, components, routes)
 ├── library-client/      # NestJS backend (API, services, database)
 ├── package.json   # Root scripts (dev, install:all, etc.)
 └── README.md
-
-🧰 Built With
+```
+---
+## 🧰 Built With
+```bash
 React + Vite
 
 NestJS
@@ -61,17 +70,24 @@ PostgreSQL (recommended DB)
 TypeORM or Prisma (ORM options)
 
 Concurrently (to run front & back together)
+```
 
-📌 Notes
+---
 
+## 📌 Notes
+```bash
 This is a personal project for educational and portfolio purposes.
 
 Future features may include authentication, admin dashboard, and deployment setup.
+```
 
-🧑‍💻 Author
+---
 
-Developed by hurtad-0
+## 🧑‍💻 Author
 
-📄 License
+### Developed by hurtad-0
+---
+
+## 📄 License
 
 This project is open source and available under the MIT License.
